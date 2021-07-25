@@ -1,6 +1,6 @@
 # Base64
 
-Base64 compact library with atob and btoa.
+Base64 compact library with atob and btoa. (Base64.js - 308 bytes)
 
 ## usage
 
