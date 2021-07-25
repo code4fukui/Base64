@@ -1,5 +1,9 @@
 # Base64
- 
+
+Base64 compact library with atob and btoa.
+
+## usage
+
 ```js
 import { Base64 } from "https://code4fukui.github.io/Base64/Base64.js";
 
