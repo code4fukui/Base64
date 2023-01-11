@@ -33,8 +33,8 @@ const chk = (b1, b2) => {
 };
 
 Deno.test("performance", () => {
-  //const size = 1024 * 1024; // 600msec(atob/btoa too slow)
-  const size = 1024 * 1024 * 10; // 10sec
+  const size = 1024 * 1024; // 600msec(atob/btoa too slow) -> no assert 25msec
+  //const size = 1024 * 1024 * 10; // 10sec -> no assert 143msec
   // const size = 1024 * 1024 * 64;
   const test = new Uint8Array(size);
   //t.assertEquals(Base64.decode(Base64.encode(test)), test);
