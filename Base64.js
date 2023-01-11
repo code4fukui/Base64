@@ -29,7 +29,6 @@ const encode = (bin) => {
     res[r++] = B64[e3];
     res[r++] = B64[e4];
   }
-  //return null;
   return new TextDecoder().decode(new Uint8Array(res.buffer, 0, r));
 };
 
@@ -58,7 +57,6 @@ const decode = (s) => {
       res[r++] = c3;
     }
   }
-  //return null;
   return new Uint8Array(res.buffer, 0, r);
 }
 
