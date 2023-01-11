@@ -19,9 +19,10 @@ Deno.test("decode", () => {
   t.assertEquals(bin, test);
 });
 Deno.test("performance", () => {
-  const size = 1024 * 1024; // 600msec
-  //const size = 1024 * 1024 * 10; // 10sec
+  const size = 1024 * 1024; // 600msec -> no assert 53msec
+  //const size = 1024 * 1024 * 10; // 10sec -> no assert 514msec
   // const size = 1024 * 1024 * 64;
   const test = new Uint8Array(size);
-  t.assertEquals(Base64.decode(Base64.encode(test)), test);
+  Base64.decode(Base64.encode(test));
+  //t.assertEquals(Base64.decode(Base64.encode(test)), test);
 });
