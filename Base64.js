@@ -5,7 +5,7 @@ for (let i = 0; i < B64S.length; i++) {
 }
 
 const encode = (bin) => {
-  const res = new Uint8Array(bin.length + bin.length / 2);
+  const res = new Uint8Array(bin.length + bin.length / 2 + 3);
   let i = 0;
   let r = 0;
   const len = bin.length;

@@ -42,3 +42,9 @@ Deno.test("performance", () => {
   //Base64.decode(Base64.encode(test));
   //t.assertEquals(Base64.encode(test), TEST); // 25msec
 });
+
+Deno.test("short", () => {
+  const bin = new Uint8Array([0]);
+  t.assertEquals(Base64.encode(bin), "AA==");
+  t.assertEquals(Base64.decode("AA=="), bin);
+});
