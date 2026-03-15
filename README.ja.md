@@ -1,12 +1,12 @@
 # Base64
 
-Base64は、小さなコンパクトなBase64ライブラリです。[atob](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/atob)と[btoa](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/btoa)を使用しています。(Base64.js - 355 bytes)
+Base64は、小さくコンパクトなBase64エンコーダ/デコーダライブラリです。[atob](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/atob)と[btoa](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/btoa)を使用しています。(Base64.js - 355 bytes)
 
 ## デモ
 https://code4fukui.github.io/Base64/
 
 ## 機能
-- WebおよびDeno向けのESモジュール
+- WebおよびDenoで使用できるESモジュール
 
 ## 使い方
 ```js
