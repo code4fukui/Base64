@@ -19,4 +19,4 @@ console.log(Base64.decode("AQL+/w=="));
 ```
 
 ## License
-MIT License
+MIT License — see [LICENSE](LICENSE).
